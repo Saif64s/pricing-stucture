@@ -2,9 +2,11 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pricing_structure/dummy/dummy.dart';
 
 import '../consts/routes.dart';
 import '../widgets/back_button.dart';
+import '../widgets/project_details/dashboard_text.dart';
 import '../widgets/project_details/tab_text.dart';
 import 'tab_screens/breakdown.dart';
 import 'tab_screens/cost_release.dart';
@@ -73,26 +75,65 @@ class _ProjectDetailsPageState extends ConsumerState<ProjectDetailsPage> {
 
       // Items of all the projects
       endDrawer: Drawer(
-        width: 500,
+        width: 700,
         child: ListView.builder(
-          itemCount: 10,
+          itemCount: projects.length,
           itemBuilder: (context, index) {
+            var project = projects[index];
             return Padding(
               padding: const EdgeInsets.symmetric(
-                horizontal: 60,
+                horizontal: 50,
                 vertical: 10,
               ),
               child: InkWell(
                 onTap: () {
                   Navigator.pushNamed(context, PROJECT_DETAILS_PAGE,
-                      arguments: index);
+                      arguments: project['project_name']);
                 },
 
-                // TODO: might get change into card or custom design, fetch from dashboard
+                // TODO: might get change into card or custom design. Fetch from the dashboard page
                 child: Container(
-                  height: 80,
-                  width: double.infinity,
-                  color: Colors.deepPurple,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [Colors.grey.shade700, Colors.grey.shade300],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.1),
+                        spreadRadius: 5,
+                        blurRadius: 10,
+                        offset: const Offset(0, 3),
+                      ),
+                    ],
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            DashBoardText(
+                              title: "Project name: ",
+                              itemText: "${project["project_name"]}",
+                            ),
+                            DashBoardText(
+                              title: "Handled by: ",
+                              itemText: "${project["handled_by"]}",
+                            ),
+                            DashBoardText(
+                              title: "Working Devs: ",
+                              itemText: "${project['working_devs']}",
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             );
