@@ -1,19 +1,17 @@
-import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pluto_grid/pluto_grid.dart';
 
-class DayHeader extends StatefulWidget {
+class DayHeader extends ConsumerStatefulWidget {
   const DayHeader({super.key, required this.stateManager});
   final PlutoGridStateManager stateManager;
 
   @override
-  State<DayHeader> createState() => _DayHeaderState();
+  ConsumerState<DayHeader> createState() => _DayHeaderState();
 }
 
-class _DayHeaderState extends State<DayHeader> {
-  final faker = Faker();
+class _DayHeaderState extends ConsumerState<DayHeader> {
   int addCount = 1;
-  int addedCount = 0;
 
   @override
   void initState() {
@@ -39,6 +37,8 @@ class _DayHeaderState extends State<DayHeader> {
     );
 
     widget.stateManager.setKeepFocus(true);
+
+    print(newRows.asMap());
   }
 
   void handleRemoveCurrentRowButton() {
@@ -52,12 +52,10 @@ class _DayHeaderState extends State<DayHeader> {
       children: [
         IconButton(
           onPressed: handleAddRows,
-          // child: const Text('Add rows'),
           icon: const Icon(Icons.add),
         ),
         IconButton(
           onPressed: handleRemoveCurrentRowButton,
-          // child: const Text('Add rows'),
           icon: const Icon(Icons.remove),
         ),
       ],

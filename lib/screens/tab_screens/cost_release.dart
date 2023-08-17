@@ -1,20 +1,35 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:pricing_structure/provider/day_provider.dart';
 
-class CostRelease extends ConsumerStatefulWidget {
+class CostRelease extends StatelessWidget {
   const CostRelease({super.key});
 
   @override
-  ConsumerState<CostRelease> createState() => _CostReleaseState();
-}
-
-class _CostReleaseState extends ConsumerState<CostRelease> {
-  @override
   Widget build(BuildContext context) {
-    final dayOutput = ref.watch(dayProvider);
-    return Center(
-      child: Text(dayOutput.toString()),
+    return Column(
+      children: [
+        ExpansionTile(
+          title: Text(
+            "Pricing Calc",
+          ),
+          children: [
+            Container(
+              height: 100,
+              width: double.infinity,
+              color: Colors.amber,
+            ),
+          ],
+        ),
+        ExpansionTile(
+          title: Text(
+            "No. of Dev Resources",
+          ),
+        ),
+        ExpansionTile(
+          title: Text(
+            "Margins",
+          ),
+        ),
+      ],
     );
   }
 }

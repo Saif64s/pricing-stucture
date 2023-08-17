@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pricing_structure/consts/routes.dart';
 import 'package:pricing_structure/screens/dashboard.dart';
-import 'package:pricing_structure/screens/modules_page.dart';
+
 import 'package:pricing_structure/screens/profile_page.dart';
 import 'package:pricing_structure/screens/project_page.dart';
 
@@ -33,7 +33,7 @@ class PricingStructureApp extends StatelessWidget {
       routes: {
         DASHBOARD_PAGE: (context) => const DashBoard(),
         PROJECT_DETAILS_PAGE: (context) => const ProjectDetailsPage(),
-        MODULE_DETAILS_PAGE: (context) => const ModuleDetailsPage(),
+        // COST_DETAILS_PAGE: (context) => CostDetailsPage(),
         PROFILE_PAGE: (context) => const ProfilePage(),
       },
     );
