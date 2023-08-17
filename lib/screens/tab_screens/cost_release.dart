@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../widgets/no_of_widgets.dart';
+
 class CostRelease extends StatelessWidget {
   const CostRelease({super.key});
 
@@ -22,124 +24,11 @@ class CostRelease extends StatelessWidget {
                 ),
               ],
             ),
-            ExpansionTile(
+            const ExpansionTile(
               title: Text(
                 "No. of Dev Resources",
               ),
-              children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 12),
-                  child: DataTable(
-                    dataRowMaxHeight: 25,
-                    dataRowMinHeight: 20,
-                    border: TableBorder.all(),
-                    columns: [
-                      DataColumn(label: Text("Dev Resources:")),
-                      DataColumn(label: Text("Number")),
-                    ],
-                    rows: [
-                      DataRow(
-                        cells: [
-                          DataCell(
-                            Text(
-                              "BE",
-                            ),
-                          ),
-                          DataCell(
-                            Text(
-                              "1",
-                            ),
-                          ),
-                        ],
-                      ),
-                      DataRow(
-                        cells: [
-                          DataCell(
-                            Text(
-                              "FE",
-                            ),
-                          ),
-                          DataCell(
-                            Text(
-                              "0",
-                            ),
-                          ),
-                        ],
-                      ),
-                      DataRow(
-                        cells: [
-                          DataCell(
-                            Text(
-                              "FS",
-                            ),
-                          ),
-                          DataCell(
-                            Text(
-                              "0",
-                            ),
-                          ),
-                        ],
-                      ),
-                      DataRow(
-                        cells: [
-                          DataCell(
-                            Text(
-                              "BA",
-                            ),
-                          ),
-                          DataCell(
-                            Text(
-                              "1",
-                            ),
-                          ),
-                        ],
-                      ),
-                      DataRow(
-                        cells: [
-                          DataCell(
-                            Text(
-                              "QA",
-                            ),
-                          ),
-                          DataCell(
-                            Text(
-                              "0",
-                            ),
-                          ),
-                        ],
-                      ),
-                      DataRow(
-                        cells: [
-                          DataCell(
-                            Text(
-                              "UX",
-                            ),
-                          ),
-                          DataCell(
-                            Text(
-                              "0",
-                            ),
-                          ),
-                        ],
-                      ),
-                      DataRow(
-                        cells: [
-                          DataCell(
-                            Text(
-                              "MOCH/Sales",
-                            ),
-                          ),
-                          DataCell(
-                            Text(
-                              "YES",
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                )
-              ],
+              children: [NoOfDevWidget()],
             ),
             const ExpansionTile(
               childrenPadding: EdgeInsets.all(16),
