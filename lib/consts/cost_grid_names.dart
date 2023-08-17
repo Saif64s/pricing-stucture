@@ -10,6 +10,29 @@ const gridName = [
   "Manual Calculator(User Inputs)",
 ];
 
+const List<String> resourceList = <String>[
+  'Unused',
+  'Aslam Hossain',
+  'Abijhit Barua',
+  'Muntasir Mahmud Saif',
+  'Abbas',
+  'Salam'
+];
+const List<String> effortList = <String>[
+  '5',
+  '10',
+  '15',
+  '20',
+  '30',
+  '40',
+  '50',
+  '60',
+  '70',
+  '80',
+  '90',
+  '100'
+];
+
 final pricingCalItem = [
   PricingCal(
     role: "BE1",

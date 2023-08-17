@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../widgets/auto_cal_dif.dart';
 import '../../widgets/auto_cal_discount.dart';
 import '../../widgets/manual_cal_input_widget.dart';
 import '../../widgets/margin_widget.dart';
 import '../../widgets/no_of_widgets.dart';
+import '../../widgets/pricing_cal_widget.dart';
 
 class CostRelease extends StatelessWidget {
   const CostRelease({super.key});
@@ -17,56 +19,84 @@ class CostRelease extends StatelessWidget {
         child: Column(
           children: [
             ExpansionTile(
-              title: const Text(
+              title: Text(
                 "Pricing Calc",
-              ),
-              children: [
-                Container(
-                  height: 100,
-                  width: double.infinity,
-                  color: Colors.amber,
+                style: GoogleFonts.nunito(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
                 ),
-              ],
+              ),
+              children: const [PricingCalc()],
             ),
-            const ExpansionTile(
+            const Divider(thickness: 2),
+            ExpansionTile(
               title: Text(
                 "No. of Dev Resources",
+                style: GoogleFonts.nunito(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
               ),
-              children: [NoOfDevWidget()],
+              children: const [NoOfDevWidget()],
             ),
-            const ExpansionTile(
-              childrenPadding: EdgeInsets.all(16),
+            const Divider(thickness: 2),
+            ExpansionTile(
+              childrenPadding: const EdgeInsets.all(16),
               title: Text(
                 "Margins",
+                style: GoogleFonts.nunito(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
               ),
-              children: [
+              children: const [
                 MarginWidget(),
               ],
             ),
-            const ExpansionTile(
+            const Divider(thickness: 2),
+            ExpansionTile(
               title: Text(
                 "Initial Sales Rate Total cost w/ Overheads",
+                style: GoogleFonts.nunito(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
               ),
             ),
-            const ExpansionTile(
+            const Divider(thickness: 2),
+            ExpansionTile(
               title: Text(
                 "Automatic Calc with % discount",
+                style: GoogleFonts.nunito(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
               ),
-              children: [AutoCalDiscount()],
+              children: const [AutoCalDiscount()],
             ),
-            const ExpansionTile(
+            const Divider(thickness: 2),
+            ExpansionTile(
               title: Text(
                 "Automatic Calc- 10,000 Differences",
+                style: GoogleFonts.nunito(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
               ),
-              children: [
+              children: const [
                 AutoCalDif(),
               ],
             ),
-            const ExpansionTile(
+            const Divider(thickness: 2),
+            ExpansionTile(
               title: Text(
                 "Manual Calculator(User Inputs)",
+                style: GoogleFonts.nunito(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
               ),
-              children: [ManualCalDiscount()],
+              children: const [ManualCalDiscount()],
             ),
           ],
         ),
