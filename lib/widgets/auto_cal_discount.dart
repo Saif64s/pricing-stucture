@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class NoOfDevWidget extends StatelessWidget {
-  const NoOfDevWidget({
+class AutoCalDiscount extends StatelessWidget {
+  const AutoCalDiscount({
     super.key,
   });
 
@@ -21,9 +21,12 @@ class NoOfDevWidget extends StatelessWidget {
         dataRowMinHeight: 20,
         border: TableBorder.all(),
         columns: const [
-          DataColumn(label: Text("Dev Resources:")),
+          DataColumn(label: Text("Net Margin")),
           DataColumn(
-            label: Text("Number"),
+            label: Text("Market Price"),
+          ),
+          DataColumn(
+            label: Text("% Discount"),
           ),
         ],
         rows: const [
@@ -31,12 +34,17 @@ class NoOfDevWidget extends StatelessWidget {
             cells: [
               DataCell(
                 Text(
-                  "BE",
+                  "17.2%",
                 ),
               ),
               DataCell(
                 Text(
-                  "1",
+                  "16.2%",
+                ),
+              ),
+              DataCell(
+                Text(
+                  "1%",
                 ),
               ),
             ],
@@ -45,7 +53,26 @@ class NoOfDevWidget extends StatelessWidget {
             cells: [
               DataCell(
                 Text(
-                  "FE",
+                  "17.2%",
+                ),
+              ),
+              DataCell(
+                Text(
+                  "2.31%",
+                ),
+              ),
+              DataCell(
+                Text(
+                  "2%",
+                ),
+              ),
+            ],
+          ),
+          DataRow(
+            cells: [
+              DataCell(
+                Text(
+                  "2%",
                 ),
               ),
               DataCell(
@@ -53,13 +80,56 @@ class NoOfDevWidget extends StatelessWidget {
                   "0",
                 ),
               ),
+              DataCell(
+                Text(
+                  "3%",
+                ),
+              ),
             ],
           ),
           DataRow(
             cells: [
               DataCell(
                 Text(
-                  "FS",
+                  "6.21%",
+                ),
+              ),
+              DataCell(
+                Text(
+                  "1%",
+                ),
+              ),
+              DataCell(
+                Text(
+                  "4%",
+                ),
+              ),
+            ],
+          ),
+          DataRow(
+            cells: [
+              DataCell(
+                Text(
+                  "27%",
+                ),
+              ),
+              DataCell(
+                Text(
+                  "26.23%",
+                ),
+              ),
+              DataCell(
+                Text(
+                  "5%",
+                ),
+              ),
+            ],
+          ),
+          DataRow(
+            cells: [
+              DataCell(
+                Text(
+                  "5%",
                 ),
               ),
               DataCell(
@@ -67,18 +137,9 @@ class NoOfDevWidget extends StatelessWidget {
                   "0",
                 ),
               ),
-            ],
-          ),
-          DataRow(
-            cells: [
               DataCell(
                 Text(
-                  "BA",
-                ),
-              ),
-              DataCell(
-                Text(
-                  "1",
+                  "15%",
                 ),
               ),
             ],
@@ -87,40 +148,17 @@ class NoOfDevWidget extends StatelessWidget {
             cells: [
               DataCell(
                 Text(
-                  "QA",
+                  "40%",
                 ),
               ),
               DataCell(
                 Text(
-                  "0",
-                ),
-              ),
-            ],
-          ),
-          DataRow(
-            cells: [
-              DataCell(
-                Text(
-                  "UX",
+                  "4%",
                 ),
               ),
               DataCell(
                 Text(
-                  "0",
-                ),
-              ),
-            ],
-          ),
-          DataRow(
-            cells: [
-              DataCell(
-                Text(
-                  "MOCH/Sales",
-                ),
-              ),
-              DataCell(
-                Text(
-                  "YES",
+                  "25%",
                 ),
               ),
             ],

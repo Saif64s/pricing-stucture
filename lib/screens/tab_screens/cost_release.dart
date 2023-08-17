@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../../widgets/auto_cal_dif.dart';
+import '../../widgets/auto_cal_discount.dart';
+import '../../widgets/manual_cal_input_widget.dart';
+import '../../widgets/margin_widget.dart';
 import '../../widgets/no_of_widgets.dart';
 
 class CostRelease extends StatelessWidget {
@@ -36,33 +40,7 @@ class CostRelease extends StatelessWidget {
                 "Margins",
               ),
               children: [
-                Column(
-                  children: [
-                    TextField(
-                      decoration: InputDecoration(
-                        hintText: "Gross Profit Margin (SELISE)",
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(20),
-                          ),
-                        ),
-                      ),
-                      keyboardType: TextInputType.number,
-                    ),
-                    SizedBox(height: 10),
-                    TextField(
-                      decoration: InputDecoration(
-                        hintText: "Net Profit Margin (WEB)",
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(20),
-                          ),
-                        ),
-                      ),
-                      keyboardType: TextInputType.number,
-                    ),
-                  ],
-                ),
+                MarginWidget(),
               ],
             ),
             const ExpansionTile(
@@ -74,16 +52,21 @@ class CostRelease extends StatelessWidget {
               title: Text(
                 "Automatic Calc with % discount",
               ),
+              children: [AutoCalDiscount()],
             ),
             const ExpansionTile(
               title: Text(
                 "Automatic Calc- 10,000 Differences",
               ),
+              children: [
+                AutoCalDif(),
+              ],
             ),
             const ExpansionTile(
               title: Text(
                 "Manual Calculator(User Inputs)",
               ),
+              children: [ManualCalDiscount()],
             ),
           ],
         ),
