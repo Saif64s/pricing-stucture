@@ -29,6 +29,26 @@ class CostRelease extends StatelessWidget {
             "Margins",
           ),
         ),
+        ExpansionTile(
+          title: Text(
+            "Initial Sales Rate Total cost w/ Overheads",
+          ),
+        ),
+        ExpansionTile(
+          title: Text(
+            "Automatic Calc with % discount",
+          ),
+        ),
+        ExpansionTile(
+          title: Text(
+            "Automatic Calc- 10,000 Differences",
+          ),
+        ),
+        ExpansionTile(
+          title: Text(
+            "Manual Calculator(User Inputs)",
+          ),
+        ),
       ],
     );
   }
