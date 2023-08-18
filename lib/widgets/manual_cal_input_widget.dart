@@ -91,8 +91,8 @@ class ManualCalDiscount extends StatelessWidget {
                 ),
               ),
               DataCell(
-                Text(
-                  "26.23%",
+                TextField(
+                  decoration: InputDecoration(hintText: "Input"),
                 ),
               ),
             ],

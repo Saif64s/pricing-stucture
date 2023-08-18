@@ -37,8 +37,6 @@ class _DayHeaderState extends ConsumerState<DayHeader> {
     );
 
     widget.stateManager.setKeepFocus(true);
-
-    print(newRows.asMap());
   }
 
   void handleRemoveCurrentRowButton() {

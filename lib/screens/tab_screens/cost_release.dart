@@ -5,7 +5,7 @@ import '../../widgets/auto_cal_dif.dart';
 import '../../widgets/auto_cal_discount.dart';
 import '../../widgets/manual_cal_input_widget.dart';
 import '../../widgets/margin_widget.dart';
-import '../../widgets/no_of_widgets.dart';
+import '../../widgets/no_of_devs_widgets.dart';
 import '../../widgets/pricing_cal_widget.dart';
 
 class CostRelease extends StatelessWidget {

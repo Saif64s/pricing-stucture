@@ -12,8 +12,33 @@ class PricingCalc extends StatefulWidget {
 }
 
 class _PricingCalcState extends State<PricingCalc> {
-  String resourceValue = resourceList.first;
-  String effortValue = effortList.last;
+  String resourceValueBE1 = resourceList.first;
+  String resourceValueBE2 = resourceList.first;
+  String resourceValueBE3 = resourceList.first;
+  String resourceValueFE1 = resourceList.first;
+  String resourceValueFE2 = resourceList.first;
+  String resourceValueFE3 = resourceList.first;
+  String resourceValueFS1 = resourceList.first;
+  String resourceValueFS2 = resourceList.first;
+  String resourceValueBA1 = resourceList.first;
+  String resourceValueBA2 = resourceList.first;
+  String resourceValueQA = resourceList.first;
+  String resourceValueUX = resourceList.first;
+  String resourceValueMoch = resourceList.first;
+
+  String effortValueBE1 = effortList.first;
+  String effortValueBE2 = effortList.first;
+  String effortValueBE3 = effortList.first;
+  String effortValueFE1 = effortList.first;
+  String effortValueFE2 = effortList.first;
+  String effortValueFE3 = effortList.first;
+  String effortValueFS1 = effortList.first;
+  String effortValueFS2 = effortList.first;
+  String effortValueBA1 = effortList.first;
+  String effortValueBA2 = effortList.first;
+  String effortValueQA = effortList.first;
+  String effortValueUX = effortList.first;
+  String effortValueMoch = effortList.first;
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +75,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: resourceValue,
+                      value: resourceValueBE1,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -61,7 +86,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          resourceValue = value!;
+                          resourceValueBE1 = value!;
                         });
                       },
                       items: resourceList
@@ -85,7 +110,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: effortValue,
+                      value: effortValueBE1,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -96,7 +121,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          effortValue = value!;
+                          effortValueBE1 = value!;
                         });
                       },
                       items: effortList
@@ -126,7 +151,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: resourceValue,
+                      value: resourceValueBE2,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -137,7 +162,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          resourceValue = value!;
+                          resourceValueBE2 = value!;
                         });
                       },
                       items: resourceList
@@ -161,7 +186,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: effortValue,
+                      value: effortValueBE2,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -172,7 +197,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          effortValue = value!;
+                          effortValueBE2 = value!;
                         });
                       },
                       items: effortList
@@ -200,7 +225,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: resourceValue,
+                      value: resourceValueBE3,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -211,7 +236,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          resourceValue = value!;
+                          resourceValueBE3 = value!;
                         });
                       },
                       items: resourceList
@@ -235,7 +260,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: effortValue,
+                      value: effortValueBE3,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -246,7 +271,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          effortValue = value!;
+                          effortValueBE3 = value!;
                         });
                       },
                       items: effortList
@@ -274,7 +299,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: resourceValue,
+                      value: resourceValueFE1,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -285,7 +310,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          resourceValue = value!;
+                          resourceValueFE1 = value!;
                         });
                       },
                       items: resourceList
@@ -309,7 +334,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: effortValue,
+                      value: effortValueFE1,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -320,7 +345,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          effortValue = value!;
+                          effortValueFE1 = value!;
                         });
                       },
                       items: effortList
@@ -348,7 +373,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: resourceValue,
+                      value: resourceValueFE2,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -359,7 +384,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          resourceValue = value!;
+                          resourceValueFE2 = value!;
                         });
                       },
                       items: resourceList
@@ -383,7 +408,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: effortValue,
+                      value: effortValueFE2,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -394,7 +419,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          effortValue = value!;
+                          effortValueFE2 = value!;
                         });
                       },
                       items: effortList
@@ -422,7 +447,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: resourceValue,
+                      value: resourceValueFE3,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -433,7 +458,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          resourceValue = value!;
+                          resourceValueFE3 = value!;
                         });
                       },
                       items: resourceList
@@ -457,7 +482,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: effortValue,
+                      value: effortValueFE3,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -468,7 +493,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          effortValue = value!;
+                          effortValueFE3 = value!;
                         });
                       },
                       items: effortList
@@ -496,7 +521,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: resourceValue,
+                      value: resourceValueFS1,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -507,7 +532,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          resourceValue = value!;
+                          resourceValueFS1 = value!;
                         });
                       },
                       items: resourceList
@@ -531,7 +556,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: effortValue,
+                      value: effortValueFS1,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -542,7 +567,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          effortValue = value!;
+                          effortValueFS1 = value!;
                         });
                       },
                       items: effortList
@@ -570,7 +595,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: resourceValue,
+                      value: resourceValueFS2,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -581,7 +606,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          resourceValue = value!;
+                          resourceValueFS2 = value!;
                         });
                       },
                       items: resourceList
@@ -605,7 +630,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: effortValue,
+                      value: effortValueFS2,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -616,7 +641,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          effortValue = value!;
+                          effortValueFS2 = value!;
                         });
                       },
                       items: effortList
@@ -644,7 +669,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: resourceValue,
+                      value: resourceValueBA1,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -655,7 +680,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          resourceValue = value!;
+                          resourceValueBA1 = value!;
                         });
                       },
                       items: resourceList
@@ -679,7 +704,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: effortValue,
+                      value: effortValueBA1,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -690,7 +715,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          effortValue = value!;
+                          effortValueBA1 = value!;
                         });
                       },
                       items: effortList
@@ -718,7 +743,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: resourceValue,
+                      value: resourceValueBA2,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -729,7 +754,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          resourceValue = value!;
+                          resourceValueBA2 = value!;
                         });
                       },
                       items: resourceList
@@ -753,7 +778,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: effortValue,
+                      value: effortValueBA2,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -764,7 +789,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          effortValue = value!;
+                          effortValueBA2 = value!;
                         });
                       },
                       items: effortList
@@ -792,7 +817,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: resourceValue,
+                      value: resourceValueQA,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -803,7 +828,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          resourceValue = value!;
+                          resourceValueQA = value!;
                         });
                       },
                       items: resourceList
@@ -827,7 +852,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: effortValue,
+                      value: effortValueQA,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -838,7 +863,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          effortValue = value!;
+                          effortValueQA = value!;
                         });
                       },
                       items: effortList
@@ -866,7 +891,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: resourceValue,
+                      value: resourceValueUX,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -877,7 +902,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          resourceValue = value!;
+                          resourceValueUX = value!;
                         });
                       },
                       items: resourceList
@@ -901,7 +926,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: effortValue,
+                      value: effortValueUX,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -912,7 +937,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          effortValue = value!;
+                          effortValueUX = value!;
                         });
                       },
                       items: effortList
@@ -940,7 +965,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: resourceValue,
+                      value: resourceValueMoch,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -951,7 +976,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          resourceValue = value!;
+                          resourceValueMoch = value!;
                         });
                       },
                       items: resourceList
@@ -975,7 +1000,7 @@ class _PricingCalcState extends State<PricingCalc> {
                   ),
                   DataCell(
                     DropdownButton<String>(
-                      value: effortValue,
+                      value: effortValueMoch,
                       icon: const Icon(Icons.arrow_downward),
                       elevation: 16,
                       style: const TextStyle(color: Colors.deepPurple),
@@ -986,7 +1011,7 @@ class _PricingCalcState extends State<PricingCalc> {
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
                         setState(() {
-                          effortValue = value!;
+                          effortValueMoch = value!;
                         });
                       },
                       items: effortList

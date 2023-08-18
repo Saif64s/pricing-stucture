@@ -19,6 +19,7 @@ const List<String> resourceList = <String>[
   'Salam'
 ];
 const List<String> effortList = <String>[
+  '0',
   '5',
   '10',
   '15',
