@@ -76,12 +76,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: resourceValueBE1,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -111,12 +116,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: effortValueBE1,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -152,12 +162,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: resourceValueBE2,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -187,12 +202,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: effortValueBE2,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -226,12 +246,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: resourceValueBE3,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -261,12 +286,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: effortValueBE3,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -300,12 +330,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: resourceValueFE1,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -335,12 +370,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: effortValueFE1,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -374,12 +414,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: resourceValueFE2,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -409,12 +454,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: effortValueFE2,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -448,12 +498,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: resourceValueFE3,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -483,12 +538,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: effortValueFE3,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -522,12 +582,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: resourceValueFS1,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -557,12 +622,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: effortValueFS1,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -596,12 +666,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: resourceValueFS2,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -631,12 +706,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: effortValueFS2,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -670,12 +750,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: resourceValueBA1,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -705,12 +790,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: effortValueBA1,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -744,12 +834,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: resourceValueBA2,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -779,12 +874,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: effortValueBA2,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -818,12 +918,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: resourceValueQA,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -853,12 +958,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: effortValueQA,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -892,12 +1002,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: resourceValueUX,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -927,12 +1042,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: effortValueUX,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -966,12 +1086,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: resourceValueMoch,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.
@@ -1001,12 +1126,17 @@ class _PricingCalcState extends State<PricingCalc> {
                   DataCell(
                     DropdownButton<String>(
                       value: effortValueMoch,
-                      icon: const Icon(Icons.arrow_downward),
+                      icon: const Icon(
+                        Icons.arrow_downward,
+                        color: Colors.green,
+                      ),
                       elevation: 16,
-                      style: const TextStyle(color: Colors.deepPurple),
+                      style: const TextStyle(
+                        color: Colors.green,
+                      ),
                       underline: Container(
                         height: 2,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.green,
                       ),
                       onChanged: (String? value) {
                         // This is called when the user selects an item.

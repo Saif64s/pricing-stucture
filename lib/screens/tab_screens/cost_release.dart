@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../widgets/auto_cal_dif.dart';
 import '../../widgets/auto_cal_discount.dart';
+import '../../widgets/inital_sales_widget.dart';
 import '../../widgets/manual_cal_input_widget.dart';
 import '../../widgets/margin_widget.dart';
 import '../../widgets/no_of_devs_widgets.dart';
@@ -62,6 +63,7 @@ class CostRelease extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
+              children: [InitalSalesWidget()],
             ),
             const Divider(thickness: 2),
             ExpansionTile(

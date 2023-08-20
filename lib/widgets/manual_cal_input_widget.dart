@@ -35,8 +35,12 @@ class ManualCalDiscount extends StatelessWidget {
                 ),
               ),
               DataCell(
-                Text(
-                  "16.2%",
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: "input",
+                    fillColor: Colors.green,
+                    filled: true,
+                  ),
                 ),
               ),
             ],
@@ -49,8 +53,12 @@ class ManualCalDiscount extends StatelessWidget {
                 ),
               ),
               DataCell(
-                Text(
-                  "2.31%",
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: "input",
+                    fillColor: Colors.green,
+                    filled: true,
+                  ),
                 ),
               ),
             ],
@@ -63,8 +71,12 @@ class ManualCalDiscount extends StatelessWidget {
                 ),
               ),
               DataCell(
-                Text(
-                  "0",
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: "input",
+                    fillColor: Colors.green,
+                    filled: true,
+                  ),
                 ),
               ),
             ],
@@ -77,8 +89,12 @@ class ManualCalDiscount extends StatelessWidget {
                 ),
               ),
               DataCell(
-                Text(
-                  "1%",
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: "input",
+                    fillColor: Colors.green,
+                    filled: true,
+                  ),
                 ),
               ),
             ],
@@ -92,7 +108,11 @@ class ManualCalDiscount extends StatelessWidget {
               ),
               DataCell(
                 TextField(
-                  decoration: InputDecoration(hintText: "Input"),
+                  decoration: InputDecoration(
+                    hintText: "input",
+                    fillColor: Colors.green,
+                    filled: true,
+                  ),
                 ),
               ),
             ],
@@ -105,8 +125,12 @@ class ManualCalDiscount extends StatelessWidget {
                 ),
               ),
               DataCell(
-                Text(
-                  "0",
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: "input",
+                    fillColor: Colors.green,
+                    filled: true,
+                  ),
                 ),
               ),
             ],
@@ -119,8 +143,12 @@ class ManualCalDiscount extends StatelessWidget {
                 ),
               ),
               DataCell(
-                Text(
-                  "4%",
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: "input",
+                    fillColor: Colors.green,
+                    filled: true,
+                  ),
                 ),
               ),
             ],
