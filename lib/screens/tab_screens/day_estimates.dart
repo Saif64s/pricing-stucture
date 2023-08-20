@@ -124,6 +124,11 @@ class _DayEstimateState extends ConsumerState<DayEstimate>
           stateManager = event.stateManager;
         },
         createHeader: (stateManager) => DayHeader(stateManager: stateManager),
+        configuration: PlutoGridConfiguration(
+            columnSize: PlutoGridColumnSizeConfig(
+                autoSizeMode: PlutoAutoSizeMode.scale,
+                restoreAutoSizeAfterMoveColumn: false,
+                resizeMode: PlutoResizeMode.normal)),
       ),
     );
 
