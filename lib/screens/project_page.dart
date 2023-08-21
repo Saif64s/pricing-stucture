@@ -23,7 +23,7 @@ class _ProjectDetailsPageState extends ConsumerState<ProjectDetailsPage> {
   int _currentIndex = 0;
 
   final _tabs = [
-    DayEstimate(),
+    const DayEstimate(),
     const CostRelease(),
     const BreakDown(),
   ];
@@ -87,7 +87,7 @@ class _ProjectDetailsPageState extends ConsumerState<ProjectDetailsPage> {
               ),
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, PROJECT_DETAILS_PAGE,
+                  Navigator.pushReplacementNamed(context, PROJECT_DETAILS_PAGE,
                       arguments: project['project_name']);
                 },
 

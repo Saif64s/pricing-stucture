@@ -52,8 +52,8 @@ List<PlutoColumn> breakDownCols = [
     },
   ),
   PlutoColumn(
-    title: 'BE',
-    field: 'num_BE',
+    title: 'BE Price',
+    field: 'be_price',
     type: PlutoColumnType.number(
       format: '#,###.##',
     ),
@@ -79,8 +79,8 @@ List<PlutoColumn> breakDownCols = [
     },
   ),
   PlutoColumn(
-    title: 'FE',
-    field: 'num_FE',
+    title: 'FE Price',
+    field: 'fe_price',
     type: PlutoColumnType.number(
       format: '#,###.##',
     ),
@@ -106,8 +106,8 @@ List<PlutoColumn> breakDownCols = [
     },
   ),
   PlutoColumn(
-    title: 'FS',
-    field: 'num_FS',
+    title: 'FS Price',
+    field: 'fs_price',
     type: PlutoColumnType.number(
       format: '#,###.##',
     ),
@@ -133,8 +133,8 @@ List<PlutoColumn> breakDownCols = [
     },
   ),
   PlutoColumn(
-    title: 'BE Real',
-    field: 'be_real',
+    title: 'BA-UX-QA Price',
+    field: 'ba_price',
     type: PlutoColumnType.number(
       format: '#,###.##',
     ),
@@ -160,8 +160,8 @@ List<PlutoColumn> breakDownCols = [
     },
   ),
   PlutoColumn(
-    title: 'FE Real',
-    field: 'fe_real',
+    title: 'Sales Commission Value',
+    field: 'comission_price',
     type: PlutoColumnType.number(
       format: '#,###.##',
     ),
@@ -187,8 +187,8 @@ List<PlutoColumn> breakDownCols = [
     },
   ),
   PlutoColumn(
-    title: 'FS Real',
-    field: 'fs_real',
+    title: 'Min Number of Days',
+    field: 'min_days',
     type: PlutoColumnType.number(
       format: '#,###.##',
     ),
@@ -214,8 +214,8 @@ List<PlutoColumn> breakDownCols = [
     },
   ),
   PlutoColumn(
-    title: 'Total(Before Buffer)',
-    field: 'before_buffer',
+    title: 'Future Development Time',
+    field: 'future_dev_time',
     type: PlutoColumnType.number(
       format: '#,###.##',
     ),
@@ -241,33 +241,146 @@ List<PlutoColumn> breakDownCols = [
     },
   ),
   PlutoColumn(
-    title: 'Buffer',
-    field: 'buffer_field',
-    backgroundColor: Colors.amber[600],
+    title: 'Future Price',
+    field: 'future_price',
     type: PlutoColumnType.number(
       format: '#,###.##',
     ),
     footerRenderer: (rendererContext) {
       return PlutoAggregateColumnFooter(
         rendererContext: rendererContext,
-        type: PlutoAggregateColumnType.count,
+        type: PlutoAggregateColumnType.sum,
         format: '#,###.##',
         alignment: Alignment.center,
         titleSpanBuilder: (text) {
           return [
             const TextSpan(
-              text: 'Buffer',
+              text: 'CHF',
               style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const TextSpan(text: "1.25"),
+            TextSpan(text: text),
           ];
         },
       );
     },
-    readOnly: true,
+  ),
+  PlutoColumn(
+    title: 'Future Price Rounded',
+    field: 'future_price_rounded',
+    type: PlutoColumnType.number(
+      format: '#,###.##',
+    ),
+    footerRenderer: (rendererContext) {
+      return PlutoAggregateColumnFooter(
+        rendererContext: rendererContext,
+        type: PlutoAggregateColumnType.sum,
+        format: '#,###.##',
+        alignment: Alignment.center,
+        titleSpanBuilder: (text) {
+          return [
+            const TextSpan(
+              text: 'CHF',
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            TextSpan(text: text),
+          ];
+        },
+      );
+    },
+  ),
+  PlutoColumn(
+    title: 'MVP',
+    field: 'mvp',
+    type: PlutoColumnType.select(
+      ["YES", "NO"],
+    ),
+  ),
+  PlutoColumn(
+    title: 'MVP Time (Simulteneous Work)',
+    field: 'mvp_sim_work',
+    type: PlutoColumnType.number(
+      format: '#,###.##',
+    ),
+    footerRenderer: (rendererContext) {
+      return PlutoAggregateColumnFooter(
+        rendererContext: rendererContext,
+        type: PlutoAggregateColumnType.sum,
+        format: '#,###.##',
+        alignment: Alignment.center,
+        titleSpanBuilder: (text) {
+          return [
+            const TextSpan(
+              text: 'CHF',
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            TextSpan(text: text),
+          ];
+        },
+      );
+    },
+  ),
+  PlutoColumn(
+    title: 'MVP Time (Individual Work)',
+    field: 'mvp_indv_work',
+    type: PlutoColumnType.number(
+      format: '#,###.##',
+    ),
+    footerRenderer: (rendererContext) {
+      return PlutoAggregateColumnFooter(
+        rendererContext: rendererContext,
+        type: PlutoAggregateColumnType.sum,
+        format: '#,###.##',
+        alignment: Alignment.center,
+        titleSpanBuilder: (text) {
+          return [
+            const TextSpan(
+              text: 'CHF',
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            TextSpan(text: text),
+          ];
+        },
+      );
+    },
+  ),
+  PlutoColumn(
+    title: 'Effort Time (inc. Dev + BA + UX + QA)',
+    field: 'effort_time',
+    type: PlutoColumnType.number(
+      format: '#,###.##',
+    ),
+    footerRenderer: (rendererContext) {
+      return PlutoAggregateColumnFooter(
+        rendererContext: rendererContext,
+        type: PlutoAggregateColumnType.sum,
+        format: '#,###.##',
+        alignment: Alignment.center,
+        titleSpanBuilder: (text) {
+          return [
+            const TextSpan(
+              text: 'CHF',
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            TextSpan(text: text),
+          ];
+        },
+      );
+    },
   ),
 ];
 
@@ -277,58 +390,76 @@ List<PlutoRow> breakdownRows = [
     cells: {
       'module_field': PlutoCell(value: 'Module Name'),
       'feature_field': PlutoCell(value: 'OCR\nDescription of the feature'),
-      'num_BE': PlutoCell(value: 1),
-      'num_FE': PlutoCell(value: '0'),
-      'num_FS': PlutoCell(value: '0'),
-      'be_real': PlutoCell(value: 1.25),
-      'fe_real': PlutoCell(value: '0'),
-      'fs_real': PlutoCell(value: '0'),
-      'before_buffer': PlutoCell(value: 1),
-      'buffer_field': PlutoCell(value: 1.25),
+      'be_price': PlutoCell(value: 1),
+      'fe_price': PlutoCell(value: '0'),
+      'fs_price': PlutoCell(value: '0'),
+      'ba_price': PlutoCell(value: 1.25),
+      'comission_price': PlutoCell(value: '0'),
+      'min_days': PlutoCell(value: '0'),
+      'future_dev_time': PlutoCell(value: 1),
+      'future_price': PlutoCell(value: 1.25),
+      'future_price_rounded': PlutoCell(value: 1.25),
+      'mvp': PlutoCell(value: 1.25),
+      'mvp_sim_work': PlutoCell(value: 1.25),
+      'mvp_indv_work': PlutoCell(value: 1.25),
+      'effort_time': PlutoCell(value: 1.25),
     },
   ),
   PlutoRow(
     cells: {
       'module_field': PlutoCell(value: 'Module Name'),
-      'feature_field': PlutoCell(value: 'HAL App\nDescription of the feature'),
-      'num_BE': PlutoCell(value: 1),
-      'num_FE': PlutoCell(value: '0'),
-      'num_FS': PlutoCell(value: '0'),
-      'be_real': PlutoCell(value: 1.25),
-      'fe_real': PlutoCell(value: '0'),
-      'fs_real': PlutoCell(value: '0'),
-      'before_buffer': PlutoCell(value: 1),
-      'buffer_field': PlutoCell(value: 1.25),
+      'feature_field': PlutoCell(value: 'OCR\nDescription of the feature'),
+      'be_price': PlutoCell(value: 1),
+      'fe_price': PlutoCell(value: '0'),
+      'fs_price': PlutoCell(value: '0'),
+      'ba_price': PlutoCell(value: 1.25),
+      'comission_price': PlutoCell(value: '0'),
+      'min_days': PlutoCell(value: '0'),
+      'future_dev_time': PlutoCell(value: 1),
+      'future_price': PlutoCell(value: 1.25),
+      'future_price_rounded': PlutoCell(value: 1.25),
+      'mvp': PlutoCell(value: 1.25),
+      'mvp_sim_work': PlutoCell(value: 1.25),
+      'mvp_indv_work': PlutoCell(value: 1.25),
+      'effort_time': PlutoCell(value: 1.25),
     },
   ),
   PlutoRow(
     cells: {
       'module_field': PlutoCell(value: 'Module Name'),
-      'feature_field':
-          PlutoCell(value: 'Feature Name\nDescription of the feature'),
-      'num_BE': PlutoCell(value: 2),
-      'num_FE': PlutoCell(value: '0'),
-      'num_FS': PlutoCell(value: '0'),
-      'be_real': PlutoCell(value: 2.5),
-      'fe_real': PlutoCell(value: '0'),
-      'fs_real': PlutoCell(value: '0'),
-      'before_buffer': PlutoCell(value: 2),
-      'buffer_field': PlutoCell(value: 1.25),
+      'feature_field': PlutoCell(value: 'OCR\nDescription of the feature'),
+      'be_price': PlutoCell(value: 1),
+      'fe_price': PlutoCell(value: '0'),
+      'fs_price': PlutoCell(value: '0'),
+      'ba_price': PlutoCell(value: 1.25),
+      'comission_price': PlutoCell(value: '0'),
+      'min_days': PlutoCell(value: '0'),
+      'future_dev_time': PlutoCell(value: 1),
+      'future_price': PlutoCell(value: 1.25),
+      'future_price_rounded': PlutoCell(value: 1.25),
+      'mvp': PlutoCell(value: 1.25),
+      'mvp_sim_work': PlutoCell(value: 1.25),
+      'mvp_indv_work': PlutoCell(value: 1.25),
+      'effort_time': PlutoCell(value: 1.25),
     },
   ),
   PlutoRow(
     cells: {
       'module_field': PlutoCell(value: 'Module Name'),
-      'feature_field':
-          PlutoCell(value: 'Test Site\nDescription of the feature'),
-      'num_BE': PlutoCell(value: '1'),
-      'num_FE': PlutoCell(value: 0),
-      'num_FS': PlutoCell(value: '0'),
-      'be_real': PlutoCell(value: 1.25),
-      'fe_real': PlutoCell(value: '0'),
-      'fs_real': PlutoCell(value: '0'),
-      'before_buffer': PlutoCell(value: 1),
-      'buffer_field': PlutoCell(value: 1.25),
+      'feature_field': PlutoCell(value: 'OCR\nDescription of the feature'),
+      'be_price': PlutoCell(value: 1),
+      'fe_price': PlutoCell(value: '0'),
+      'fs_price': PlutoCell(value: '0'),
+      'ba_price': PlutoCell(value: 1.25),
+      'comission_price': PlutoCell(value: '0'),
+      'min_days': PlutoCell(value: '0'),
+      'future_dev_time': PlutoCell(value: 1),
+      'future_price': PlutoCell(value: 1.25),
+      'future_price_rounded': PlutoCell(value: 1.25),
+      'mvp': PlutoCell(value: 1.25),
+      'mvp_sim_work': PlutoCell(value: 1.25),
+      'mvp_indv_work': PlutoCell(value: 1.25),
+      'effort_time': PlutoCell(value: 1.25),
     },
   ),
 ];
