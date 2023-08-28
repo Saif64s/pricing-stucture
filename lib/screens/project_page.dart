@@ -64,7 +64,7 @@ class _ProjectDetailsPageState extends ConsumerState<ProjectDetailsPage> {
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         color: Colors.grey.shade400,
         buttonBackgroundColor: Theme.of(context).scaffoldBackgroundColor,
-        height: 60,
+        height: 50,
         index: _currentIndex,
         onTap: (index) {
           setState(() {

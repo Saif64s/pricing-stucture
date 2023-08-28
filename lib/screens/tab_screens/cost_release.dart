@@ -27,33 +27,51 @@ class CostRelease extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-              children: const [PricingCalc()],
-            ),
-            const Divider(thickness: 2),
-            ExpansionTile(
-              title: Text(
-                "No. of Dev Resources",
-                style: GoogleFonts.nunito(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                ),
-              ),
-              children: const [NoOfDevWidget()],
-            ),
-            const Divider(thickness: 2),
-            ExpansionTile(
-              childrenPadding: const EdgeInsets.all(16),
-              title: Text(
-                "Margins",
-                style: GoogleFonts.nunito(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                ),
-              ),
               children: const [
-                MarginWidget(),
+                Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        PricingCalc(),
+                        NoOfDevWidget(),
+                      ],
+                    ),
+                    MarginWidget(),
+                  ],
+                )
               ],
             ),
+
+            // *****
+            // const Divider(thickness: 2),
+            // ExpansionTile(
+            //   title: Text(
+            //     "No. of Dev Resources",
+            //     style: GoogleFonts.nunito(
+            //       fontWeight: FontWeight.bold,
+            //       fontSize: 20,
+            //     ),
+            //   ),
+            //   children: const [NoOfDevWidget()],
+            // ),
+            // const Divider(thickness: 2),
+            // ExpansionTile(
+            //   childrenPadding: const EdgeInsets.all(16),
+            //   title: Text(
+            //     "Margins",
+            //     style: GoogleFonts.nunito(
+            //       fontWeight: FontWeight.bold,
+            //       fontSize: 20,
+            //     ),
+            //   ),
+            //   children: const [
+            //     MarginWidget(),
+            //   ],
+            // ),
+
+            // ****
+
             const Divider(thickness: 2),
             ExpansionTile(
               title: Text(
@@ -63,7 +81,7 @@ class CostRelease extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-              children: [InitalSalesWidget()],
+              children: const [InitalSalesWidget()],
             ),
             const Divider(thickness: 2),
             ExpansionTile(
@@ -74,32 +92,44 @@ class CostRelease extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-              children: const [AutoCalDiscount()],
-            ),
-            const Divider(thickness: 2),
-            ExpansionTile(
-              title: Text(
-                "Automatic Calc- 10,000 Differences",
-                style: GoogleFonts.nunito(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                ),
-              ),
               children: const [
-                AutoCalDif(),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    AutoCalDiscount(),
+                    AutoCalDif(),
+                    ManualCalDiscount(),
+                  ],
+                )
               ],
             ),
-            const Divider(thickness: 2),
-            ExpansionTile(
-              title: Text(
-                "Manual Calculator(User Inputs)",
-                style: GoogleFonts.nunito(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                ),
-              ),
-              children: const [ManualCalDiscount()],
-            ),
+
+            // ****
+            // const Divider(thickness: 2),
+            // ExpansionTile(
+            //   title: Text(
+            //     "Automatic Calc- 10,000 Differences",
+            //     style: GoogleFonts.nunito(
+            //       fontWeight: FontWeight.bold,
+            //       fontSize: 20,
+            //     ),
+            //   ),
+            //   children: const [
+            //     AutoCalDif(),
+            //   ],
+            // ),
+            // const Divider(thickness: 2),
+            // ExpansionTile(
+            //   title: Text(
+            //     "Manual Calculator(User Inputs)",
+            //     style: GoogleFonts.nunito(
+            //       fontWeight: FontWeight.bold,
+            //       fontSize: 20,
+            //     ),
+            //   ),
+            //   children: const [ManualCalDiscount()],
+            // ),
+            // ****
           ],
         ),
       ),

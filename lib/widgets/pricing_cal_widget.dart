@@ -77,7 +77,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: resourceValueBE1,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -117,7 +117,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: effortValueBE1,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -163,7 +163,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: resourceValueBE2,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -203,7 +203,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: effortValueBE2,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -247,7 +247,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: resourceValueBE3,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -287,7 +287,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: effortValueBE3,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -331,7 +331,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: resourceValueFE1,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -371,7 +371,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: effortValueFE1,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -415,7 +415,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: resourceValueFE2,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -455,7 +455,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: effortValueFE2,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -499,7 +499,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: resourceValueFE3,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -539,7 +539,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: effortValueFE3,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -583,7 +583,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: resourceValueFS1,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -623,7 +623,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: effortValueFS1,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -667,7 +667,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: resourceValueFS2,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -707,7 +707,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: effortValueFS2,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -751,7 +751,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: resourceValueBA1,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -791,7 +791,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: effortValueBA1,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -835,7 +835,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: resourceValueBA2,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -875,7 +875,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: effortValueBA2,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -919,7 +919,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: resourceValueQA,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -959,7 +959,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: effortValueQA,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -1003,7 +1003,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: resourceValueUX,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -1043,7 +1043,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: effortValueUX,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -1087,7 +1087,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: resourceValueMoch,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -1127,7 +1127,7 @@ class _PricingCalcState extends State<PricingCalc> {
                     DropdownButton<String>(
                       value: effortValueMoch,
                       icon: const Icon(
-                        Icons.arrow_downward,
+                        Icons.arrow_drop_down,
                         color: Colors.green,
                       ),
                       elevation: 16,
@@ -1164,16 +1164,12 @@ class _PricingCalcState extends State<PricingCalc> {
           ),
           SizedBox(height: 10),
           Row(
-            mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 250),
-                child: Text(
-                  "Total Price: CHF4500",
-                  style: GoogleFonts.nunito(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 22,
-                  ),
+              Text(
+                "Total Price: CHF4500",
+                style: GoogleFonts.nunito(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 22,
                 ),
               )
             ],
