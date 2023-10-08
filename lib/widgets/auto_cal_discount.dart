@@ -26,7 +26,7 @@ class AutoCalDiscount extends StatelessWidget {
             label: Text("Market Price"),
           ),
           DataColumn(
-            label: Text("% Discount"),
+            label: Text("Discount"),
           ),
         ],
         rows: const [
