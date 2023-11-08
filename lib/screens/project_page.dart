@@ -57,7 +57,7 @@ class _ProjectDetailsPageState extends ConsumerState<ProjectDetailsPage> {
       // All the Sections found on spreadsheet
       bottomNavigationBar: CurvedNavigationBar(
         items: const [
-          ProjText(text: "Day Estimates"),
+          ProjText(text: "Day Estimate"),
           ProjText(text: "Cost Release"),
           ProjText(text: "🔐 Feature-wise Resource Breakdown"),
         ],
